@@ -1,7 +1,6 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
-
 .navigation {
   position: fixed;
   left: 40px;
@@ -18,12 +17,34 @@ export const Container = styled.div`
 }
 .icon{
     font-size:2em;
-   color:#DEB841;
+    color:lightgray;
 }
 .icon:hover{
     border-bottom:2px solid ;
 }
-
+@media (max-width: 700px) {
+.navigation {
+   position: static;
+   margin:86vh auto 0px auto;
+   background-color:#555358;
+   display: flex;
+   flex-direction: row;
+   justify-content: center; 
+   align-items: center;
+   gap:4vw;
+   border-radius: 50px;
+   width:400px;
+   height:10vh;
+ }
+}
+@media (max-width: 400px) {
+.navigation {
+   margin:90vh auto 0px auto;
+   gap:7vw;
+   border-radius:0px;
+   width:100vw;
+ }
+}
 
 `
 
