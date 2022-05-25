@@ -4,10 +4,10 @@ import Apresentation from "../components/spresentation/Apresentation";
 
 function Home() {
     return (
-        <>
-      <Navigation/>
+        <div>
+       <Navigation/>
       <Apresentation/>
-        </>
+        </div>
     )
     
 }

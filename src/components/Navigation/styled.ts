@@ -3,9 +3,8 @@ import styled from "styled-components"
 export const Container = styled.div`
 .navigation {
   position: fixed;
-  left: 40px;
+  left: 20px;
   top: 15%;
-  background-color:#555358;
   display: flex;
   flex-direction: column;
   justify-content: center; 
@@ -14,19 +13,21 @@ export const Container = styled.div`
   border-radius: 50px;
   width:80px;
   height:65vh;
+  background-color:#5F1A37;
+
+
 }
 .icon{
     font-size:2em;
-    color:lightgray;
+    color:#9DD9D2;
 }
 .icon:hover{
-    border-bottom:2px solid ;
+    border-bottom:2px solid  ;
 }
-@media (max-width: 700px) {
+@media (max-width: 950px) {
 .navigation {
    position: static;
    margin:86vh auto 0px auto;
-   background-color:#555358;
    display: flex;
    flex-direction: row;
    justify-content: center; 

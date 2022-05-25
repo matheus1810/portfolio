@@ -8,7 +8,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing:border-box;
-    background-color:#CF9893;
+    background-color:#FFF8F0;
     font-family: Open-Sans, Helvetica, Sans-Serif;
   }
 `;
