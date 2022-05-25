@@ -1,4 +1,3 @@
-
 import styled from "styled-components"
 
 export const Container = styled.div`
@@ -15,6 +14,10 @@ align-items:center ;
 font-size:2.5em;
 margin:20px auto 0px auto  ;
 justify-content:center;
+@media (max-width:950px) {
+    margin:100px auto 0px auto  ;
+} 
+
 span{
     color:#515052;
 }
@@ -27,6 +30,7 @@ height:60vh;
 width:80vw;
 margin:30px auto 0px auto;
 display:flex;
+flex-wrap:wrap;
 margin-top:60px;
 justify-content:space-between ;
 `
@@ -34,21 +38,21 @@ export const ImgContainer=styled.div`
 width:250px;
 height:350px;
 margin:0 0 0 auto;
+
 img{
     border-radius:10px;
     min-width:100% ;
     height:100%;
     border-bottom:2px solid black;
 }
-@media (max-width: 900px) {
-    display:none;
-}
+
 `
 export const ButtonsContainer=styled.div`
 display:flex;
 justify-content:center;
 margin:0 auto;
 button{ 
+    margin:20px;
     padding:10px;
     border-radius:10px;
     font-size:1.2em;
@@ -70,9 +74,9 @@ export const Text =styled.div`
 line-height:1.3em;
 font-size:1.6em ;
 margin:auto ;
-min-width:300px;
-@media (min-width: 900px) {
-    width:400px;
+width:400px;
+@media (max-width: 500px) {
+  width:100%;
 }
 
 
@@ -80,5 +84,8 @@ min-width:300px;
 export const TxtButton=styled.div`
 display:flex;
 flex-direction:column ;
-justify-content:space-evenly ;
+justify-content:space-around ;
+ @media (max-width:812px) {
+        order:2 ;
+} 
 `
