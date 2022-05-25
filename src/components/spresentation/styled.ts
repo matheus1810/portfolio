@@ -5,11 +5,14 @@ export const Container = styled.div`
 position:absolute;
 top:0;
 width:100vw;
+@media (max-width: 900px) {
+    flex-wrap:wrap;
+}
 `
 export const TxtContainer=styled.div`
 display:flex ;
 align-items:center ;
-font-size:2.8em;
+font-size:2.5em;
 margin:20px auto 0px auto  ;
 justify-content:center;
 span{
@@ -20,13 +23,12 @@ export const Intro=styled.div`
 div{
      margin: 0 auto ;
 }
+height:60vh;
 width:80vw;
 margin:30px auto 0px auto;
 display:flex;
-margin-top:80px;
-@media (max-width: 900px) {
-    flex-wrap:wrap;
-}
+margin-top:60px;
+justify-content:space-between ;
 `
 export const ImgContainer=styled.div`
 width:250px;
@@ -37,6 +39,9 @@ img{
     min-width:100% ;
     height:100%;
     border-bottom:2px solid black;
+}
+@media (max-width: 900px) {
+    display:none;
 }
 `
 export const ButtonsContainer=styled.div`
@@ -64,7 +69,16 @@ button{
 export const Text =styled.div`
 line-height:1.3em;
 font-size:1.6em ;
-width:75%;
 margin:auto ;
- width:400px
+min-width:300px;
+@media (min-width: 900px) {
+    width:400px;
+}
+
+
+`
+export const TxtButton=styled.div`
+display:flex;
+flex-direction:column ;
+justify-content:space-evenly ;
 `

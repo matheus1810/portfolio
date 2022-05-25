@@ -1,4 +1,4 @@
-import { ButtonsContainer, Container, ImgContainer, Intro, Text, TxtContainer } from "./styled";
+import { ButtonsContainer, Container, ImgContainer, Intro, Text, TxtButton, TxtContainer } from "./styled";
 
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
 import b from "../assets/b.jpg"
@@ -22,7 +22,7 @@ function Apresentation() {
 
       <Intro>
 
-        <div>
+        <TxtButton>
           <ButtonsContainer>
             <button className="btn1">Baixar cv</button>
             <button className="btn2">Sobre mim</button>
@@ -36,7 +36,7 @@ function Apresentation() {
             banco de dados utilizando MySql etc .
             </p>
           </Text>
-        </div>
+        </TxtButton>
         <ImgContainer>
           <img src={b} />
         </ImgContainer>
